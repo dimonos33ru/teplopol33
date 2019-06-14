@@ -1,0 +1,56 @@
+.form-requisition {
+	padding: 40px 30px 20px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	position: relative;
+	z-index: 3;
+	bottom: 100px;
+	margin-bottom: -100px;
+	text-align: center;
+	&__title {
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+	&__input-line {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	&__input-wrap {
+		display: inline-block;
+    max-width: 350px;
+		width: 100%;
+		label {
+			display: block;
+			text-align: left;
+		}
+		span {
+			display: block;
+			font-size: 14px;
+			color: $text-second;
+			margin-bottom: 3px;
+		}
+	}
+	&__input {
+		max-width: 350px;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #c2c8c9;
+    border-radius: 3px;
+    padding: 0 15px;
+    font-size: 15px;
+	}
+	&__submit {
+		width: 100%;
+		max-width: 250px;
+		font-size: 18px;
+		height: 55px;
+	}
+	&__info {
+		display: block;
+		margin-top: 20px;
+		font-size: 14px;
+	}
+}
