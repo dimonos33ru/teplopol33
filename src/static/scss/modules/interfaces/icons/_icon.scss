@@ -1,0 +1,13 @@
+.fas {
+	color: darken($accent2, 15);
+}
+.fa-envelope,
+.fa-phone {
+	font-size: 22px;
+	margin-right: 5px;
+}
+
+.fa-envelope {
+	position: relative;
+	top: 3px;
+}

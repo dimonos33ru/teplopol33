@@ -1,0 +1,21 @@
+include ../utils/mixins
+block variables
+
+doctype html
+
+html(lang="ru-RU")
+
+	head
+		include ../modules/_head/head
+
+	body(class=pageClass)
+		.wrapper
+			include ../modules/header/header
+			.content
+				block content
+			include ../modules/footer/footer
+
+		script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/bundle.js")
+		block script
