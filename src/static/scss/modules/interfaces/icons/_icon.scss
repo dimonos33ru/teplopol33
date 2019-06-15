@@ -1,8 +1,9 @@
 .fas {
-	color: darken($accent2, 15);
+	// color: darken($accent2, 15);
 }
 .fa-envelope,
 .fa-phone {
+	color: darken($accent2, 15);
 	font-size: 22px;
 	margin-right: 5px;
 }

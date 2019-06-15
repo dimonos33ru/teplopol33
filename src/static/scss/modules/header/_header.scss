@@ -1,9 +1,9 @@
 .header {
+	&__top {
 	padding: 20px 0;
+	}
 	&__wrap {
 		align-items: center;
-		justify-content: space-between;
-		flex-wrap: nowrap;
 	}
 	&__logo {
 		// max-width: 250px;
@@ -23,5 +23,8 @@
 	}
 	&__mail {
 		color: $accent2;
+	}
+	&__nav {
+		background-color: $accent2;
 	}
 }
