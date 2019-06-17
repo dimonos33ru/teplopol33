@@ -9,6 +9,14 @@
 		text-align: center;
 		font-size: 36px;
 	}
+
+	&__description {
+		padding-bottom: 20px;
+		max-width: 70%;
+		margin: 0 auto;
+		text-align: center;
+		font-weight: 300;
+	}
 }
 
 
@@ -17,4 +25,5 @@
 @import "s-what-we-do";
 @import "s-advantages";
 @import "s-work-scheme";
+@import "s-projects";
 @import "s-contacts";

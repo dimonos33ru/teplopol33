@@ -16,4 +16,9 @@ $(document).ready(() => {
 		navContainerClass: 'slider-main__nav',
 		navClass: ['slider-main__arrow-left', 'slider-main__arrow-right'],
 	});
+
+	$('#slider-projects').owlCarousel({
+		items: 1,
+		autoplay: false,
+	});
 });
