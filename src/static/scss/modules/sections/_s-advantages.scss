@@ -1,0 +1,27 @@
+.advantages {
+	text-align: center;
+	& > * {
+		&:not(:last-child) {margin-bottom:10px;}
+	}
+	&__icon {
+		position: relative;
+		display: inline-block;
+		border: 2px solid $accent2;
+		border-radius: 50%;
+		@include size(80px);
+		&> i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			font-size: 40px;
+			color: $accent2;
+		}
+	}
+	&__title {
+		font-size: 18px;
+	}
+	&__text {
+
+	}
+}

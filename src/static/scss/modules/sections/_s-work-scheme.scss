@@ -1,0 +1,32 @@
+.work-scheme {
+	&__block {
+		text-align: center;
+		padding: 15px 50px;
+	}
+	&__icon {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 20px;
+		background-color: $accent2;
+		border-radius: 50%;
+		@include size(90px);
+		&> i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			font-size: 40px;
+			color: $white;
+		}
+	}
+	&__title {
+		font-size: 20px;
+		font-weight: normal;
+	}
+	&__text {
+		font-weight: 300;
+	}
+	&__arrow {
+
+	}
+}

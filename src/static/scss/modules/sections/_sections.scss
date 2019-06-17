@@ -1,10 +1,13 @@
 .section {
-	padding: 60px 0 90px;
+	padding: 60px 0 70px;
+	&--bg {
+		background-color: $bg-color-1;
+	}
 
 	&__title {
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 		text-align: center;
-		font-size: 40px;
+		font-size: 36px;
 	}
 }
 
@@ -12,4 +15,6 @@
 
 @import "form-requisition";
 @import "s-what-we-do";
+@import "s-advantages";
+@import "s-work-scheme";
 @import "s-contacts";

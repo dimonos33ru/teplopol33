@@ -1,6 +1,5 @@
 @include font-face("opensans", "../fonts/OpenSansRegular/OpenSansRegular");
+@include font-face("opensans", "../fonts/OpenSansLight/OpenSansLight", 300);
 @include font-face("opensans", "../fonts/OpenSansBold/OpenSansBold", bold);
 @include font-face("roboto", "../fonts/RobotoRegular/RobotoRegular");
 @include font-face("roboto", "../fonts/RobotoBold/RobotoBold", bold);
-@include font-face("montserrat", "../fonts/MontserratRegular/MontserratRegular");
-@include font-face("montserrat", "../fonts/MontserratSemibold/MontserratSemibold", 600);

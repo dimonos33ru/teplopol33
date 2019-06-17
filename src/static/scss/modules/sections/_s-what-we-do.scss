@@ -4,7 +4,7 @@
 		overflow: hidden;
 		text-align: center;
 		&:hover img {
-			filter: opacity(80%);
+			filter: opacity(75%);
 			transition: all 0.5s;
 		}
 	}
@@ -17,12 +17,13 @@
 	}
 	&__link {
 		position: relative;
-		font-size: 22px;
+		padding: 10px 0;
+		font-size: 20px;
 		&::before {
 			content: '';
 			position: absolute;
 			left: 0;
-			bottom: -10px;
+			bottom: 0;
 			height: 2px;
 			width: 100%;
 			background-color: $accent2;
