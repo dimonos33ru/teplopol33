@@ -1,5 +1,15 @@
 .section {
-	padding: 30px 0;
+	padding: 60px 0 90px;
+
+	&__title {
+		padding-bottom: 30px;
+		text-align: center;
+		font-size: 40px;
+	}
 }
 
+
+
 @import "form-requisition";
+@import "s-what-we-do";
+@import "s-contacts";
