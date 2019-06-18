@@ -1,0 +1,32 @@
+.about {
+	&__img {
+		position: relative;
+		background: url("../img/content/about-2.jpg") no-repeat center;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba($bg-color-1, 0.5);
+		}
+	}
+	&__title {
+		text-align: center;
+		font-size: 24px;
+		padding-bottom: 15px;
+	}
+	&__text {
+		// text-align: center;
+		padding: 0 30px;
+		text-indent: 25px;
+		color: $text-second;
+		& > * {
+			&:not(:last-child) {padding-bottom: 10px;}
+		}
+	}
+}

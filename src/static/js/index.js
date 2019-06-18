@@ -21,4 +21,9 @@ $(document).ready(() => {
 		items: 1,
 		autoplay: false,
 	});
+
+	$('[data-fancybox]').fancybox({
+		toolbar: false,
+		smallBtn: false,
+	});
 });

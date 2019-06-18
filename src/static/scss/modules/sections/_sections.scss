@@ -1,13 +1,17 @@
+section[class^="section"]:nth-child(even) {
+	background-color: $bg-color-1;
+}
+
 .section {
 	padding: 60px 0 70px;
-	&--bg {
-		background-color: $bg-color-1;
-	}
+	// &--bg {
+	// 	background-color: $bg-color-1;
+	// }
 
 	&__title {
 		padding-bottom: 40px;
 		text-align: center;
-		font-size: 36px;
+		font-size: 24px;
 	}
 
 	&__description {
@@ -26,4 +30,5 @@
 @import "s-advantages";
 @import "s-work-scheme";
 @import "s-projects";
+@import "s-about";
 @import "s-contacts";
