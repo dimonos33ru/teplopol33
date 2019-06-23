@@ -1,0 +1,37 @@
+section.section.s-calculate
+	.container
+		.row.calculate
+			.col-md-6
+				.calculate__text-wrap
+					.calculate__title 
+						h2 Расчитать стоимость водяного теплого пола
+					.calculate__text
+						p Узнайте цену теплого пола для вашей <br> квартиры, дома или дачи
+			.col-md-6
+				form.calculate__form
+					.calculate__input-wrap.form__input-wrap
+						label
+							span Площадь помещения
+							input(type="number" name="room_area" placeholder="Введите число" required).calculate__input.form__input
+					.calculate__input-wrap.form__input-wrap
+						label
+							span Количество помещений
+							input(type="number" name="number_area" placeholder="Введите число" required).calculate__input.form__input
+					.calculate__input-wrap.form__input-wrap
+						label
+							span Введите ваше имя
+							input(type="text" name="name" placeholder="Имя" required).calculate__input.form__input
+					.calculate__input-wrap.form__input-wrap
+						label
+							span Введите вашу фамилию
+							input(type="text" name="surname" placeholder="Фамилия" required).calculate__input.form__input
+					.calculate__input-wrap.form__input-wrap
+						label
+							span Введите ваш телефон
+							input(type="tel" name="phone" placeholder="Телефон").calculate__input.form__input
+					.calculate__input-wrap.form__input-wrap
+						label
+							span Введите ваш email
+							input(type="email" name="email" placeholder="Email").calculate__input.form__input
+					.calculate__dummy
+					button(type="submit").calculate__submit.btn Узнать цену пола

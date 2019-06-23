@@ -3,15 +3,16 @@ section.s-form-requisition
 			.row
 				.col-md-12
 					form.form-requisition
-						h3.form-requisition__title Заполните заявку и получите бесплатный расчет полов
+						.form-requisition__title
+							h3 Заполните заявку и мы вам перезвоним
 						.form-requisition__input-line
-							.form-requisition__input-wrap
+							.form-requisition__input-wrap.form__input-wrap
 								label
 									span Введите ваше имя
-									input(type="text" name="text" placeholder="Имя" required).form-requisition__input
-							.form-requisition__input-wrap
+									input(type="text" name="name" placeholder="Имя" required).form-requisition__input.form__input
+							.form-requisition__input-wrap.form__input-wrap
 								label
 									span Введите номер телефона
-									input(type="text" name="text" placeholder="Номер телефона" required).form-requisition__input
-							button(type="submit").form-requisition__submit.btn Получить расчет
+									input(type="text" name="phone" placeholder="Номер телефона" required).form-requisition__input.form__input
+							button(type="submit").form-requisition__submit.btn Отправить заявку
 						small.form-requisition__info * - Заявка вас ни к чему не обязывает, наш менеджер свяжется с вами в течении часа. Ваши контакты не передаем третьим лицам.
