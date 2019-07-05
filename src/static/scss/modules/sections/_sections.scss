@@ -3,7 +3,7 @@ section[class^="section"]:nth-child(even) {
 }
 
 .section {
-	padding: 60px 0 90px;
+	padding: 80px 0 90px;
 	// &--bg {
 	// 	background-color: $bg-color-1;
 	// }
@@ -26,7 +26,7 @@ section[class^="section"]:nth-child(even) {
 
 
 @import "form-requisition";
-@import "s-what-we-do";
+@import "s-services";
 @import "s-advantages";
 @import "s-work-scheme";
 @import "s-projects";

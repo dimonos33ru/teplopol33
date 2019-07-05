@@ -1,7 +1,7 @@
 // import $ from "jquery";
 
-/* Init OwlCarousel */
 $(document).ready(() => {
+	/* Init OwlCarousel */
 	$('#slider-main').owlCarousel({
 		items: 1,
 		autoplay: true,
@@ -17,13 +17,23 @@ $(document).ready(() => {
 		navClass: ['slider-main__arrow-left', 'slider-main__arrow-right'],
 	});
 
+	/* Setting OwlCarousel */
 	$('#slider-projects').owlCarousel({
 		items: 1,
 		autoplay: false,
 	});
 
+	/* Setting FancyBox */
 	$('[data-fancybox]').fancybox({
 		toolbar: false,
 		smallBtn: false,
+	});
+
+	// Плавная прокрутка
+	$('a[href^="#"]').on('click', function () {
+		$('html, body').animate({
+			scrollTop: $($.attr(this, 'href')).offset().top,
+		}, 1000);
+		return false;
 	});
 });
