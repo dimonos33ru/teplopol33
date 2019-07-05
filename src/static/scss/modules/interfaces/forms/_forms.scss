@@ -1,7 +1,7 @@
 .form {
 	&__input-wrap {
 		display: inline-block;
-    max-width: 350px;
+    max-width: 400px;
 		label {
 			display: block;
 			text-align: left;
@@ -21,5 +21,30 @@
     border-radius: 3px;
     padding: 0 15px;
     font-size: 15px;
+	}
+}
+
+.popup {
+	width: 500px;
+	min-width: 280px;
+	padding: 35px 30px;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+	text-align: center;
+	&__input-wrap {
+		width: 100%;
+	}
+	&__submit {
+		margin-top: 20px;
+		max-width: 280px;
+		width: 100%;
+	}
+	& h2 {
+		font-size: 36px;
+		font-weight: normal;
+	}
+	& form {
+		margin-top: 20px;
 	}
 }

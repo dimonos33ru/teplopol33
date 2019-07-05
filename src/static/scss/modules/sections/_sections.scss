@@ -4,16 +4,11 @@ section[class^="section"]:nth-child(even) {
 
 .section {
 	padding: 80px 0 90px;
-	// &--bg {
-	// 	background-color: $bg-color-1;
-	// }
-
 	&__title {
 		padding-bottom: 40px;
 		text-align: center;
 		font-size: 24px;
 	}
-
 	&__description {
 		padding-bottom: 20px;
 		max-width: 70%;
@@ -23,6 +18,10 @@ section[class^="section"]:nth-child(even) {
 	}
 }
 
+.hidden {
+	display: none !important;
+	visibility: hidden !important;
+}
 
 
 @import "form-requisition";

@@ -1,0 +1,14 @@
+.hidden
+	.popup(style="display:none")#modal-requisition
+		h2 Оставьте заявку
+		p Оставьте заявку прямо сейчас и в ближайшее время наш менеджер свяжется с вами.
+		form(action="#")
+			.popup__input-wrap.form__input-wrap
+				label
+					span Введите ваше имя
+					input(type="text" name="name" placeholder="Имя" required).form__input
+			.popup__input-wrap.form__input-wrap
+				label
+					span Введите ваш телефон
+					input(type="tel" name="phone" placeholder="Телефон" required).form__input
+			button(type="submit").popup__submit.btn Отправить заявку
