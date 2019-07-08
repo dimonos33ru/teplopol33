@@ -5,20 +5,20 @@
 		height: 75vh;
 		min-height: 30vmax;
 		position: relative;
-		&--bg1 {
-			background: url("../img/content/slides/water_system.jpg") center no-repeat;
+		&--bg3 {
+			background: url("../img/content/slides/water_system.jpg") center 30% no-repeat;
 			background-size: cover;
 		}
 		&--bg2 {
 			background: url("../img/content/slides/slide-otopl.jpg") center no-repeat;
 			background-size: cover;
 		}
-		&--bg3 {
-			background: url("../img/content/slides/water-dispos.jpg") center 65% no-repeat;
+		&--bg4 {
+			background: url("../img/content/slides/water-dispos.jpg") center 75% no-repeat;
 			background-size: cover;
 		}
-		&--bg4 {
-			background: url("../img/content/slides/warm-floor.jpg") center 65% no-repeat;
+		&--bg1 {
+			background: url("../img/content/slides/slide-pol.jpg") center bottom no-repeat;
 			background-size: cover;
 		}
 		&::before {
