@@ -9,6 +9,7 @@ $(document).ready(() => {
 		nav: true,
 		dots: false,
 		loop: true,
+		mouseDrag: false,
 		smartSpeed: 1000,
 		animateOut: 'fadeOut',
 
