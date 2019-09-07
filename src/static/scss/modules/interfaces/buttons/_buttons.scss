@@ -1,21 +1,22 @@
 .btn {
 	display: inline-block;
 	border-radius: 5px;
-	padding: 10px 15px;
-	box-shadow:inset 0px 1px 0px 0px #f5978e;
-	background: linear-gradient(to bottom, lighten($accent, 12) 1%, $accent 100%);
-	background-color:#f24537;
-	border:1px solid #d02718;
+	padding: 10px 10px;
 	min-width: 160px;
 	cursor: pointer;
-	
-	text-shadow:0px 1px 0px #810e05;
+	font-size: 16px;
+	background-color:$accent;
 	text-align: center;
+	
 	color: $white;
+	text-shadow:0px 1px 0px #810e05;
+	background-color:#f24537;
+	border:1px solid #d02718;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background: linear-gradient(to bottom, lighten($accent, 12) 1%, $accent 100%);
 	&:hover {
 		color: $white;
 		background: linear-gradient(to bottom, $accent 1%, lighten($accent, 12) 100%);
-		background-color:#c62d1f;
 		transition: all 0.5s ease-out;
 	}
 	&:active {

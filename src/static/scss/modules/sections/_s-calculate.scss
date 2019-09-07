@@ -32,6 +32,9 @@
 		font-size: 22px;
 		// color: $accent2;
 	}
+}
+
+.calculate {
 	&__form {
 		padding: 25px 30px;
 		display: flex;
@@ -46,9 +49,11 @@
 		}
 	}
 	&__input-wrap {
-		// width: 49%;
 		flex-basis: 47%;
 		min-width: 195px;
+		& p {
+			font-size: 0.7em;
+		}
 	}
 	&__input {
 		max-width: 235px;

@@ -27,7 +27,7 @@ html {
 }
 body {
 	height: 100%;
-	// font-family: $default-font;
+	color: $text;
 	font-family: $default-font;
 }
 
@@ -37,10 +37,9 @@ img {
 
 a {
 	color: $text;
-	text-decoration: none;
 	&:hover {
 		text-decoration: none;
-		color: $text;
+		// color: $text;
 	}
 }
 
