@@ -1,32 +1,32 @@
 .about {
+	&__wrap {
+		position: relative;
+		z-index: 10;
+	}
+	&__inner {
+		padding: 30px;
+		position: absolute;
+		top: 50%;
+		left: 40%;
+		width: 75%;
+		transform: translateY(-50%);
+		background-color: $white;
+		box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.15);
+	}
 	&__img {
 		position: relative;
-		background: url("../img/content/about-2.jpg") no-repeat center;
-		background-size: cover;
-		height: 100%;
-		width: 100%;
-		&::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			height: 100%;
-			width: 100%;
-			background-color: rgba($bg-color-1, 0.5);
-		}
+		height: auto;
 	}
 	&__title {
-		text-align: center;
+		padding-bottom: 10px;
+		text-align: left;
 		font-size: 24px;
-		padding-bottom: 15px;
 	}
 	&__text {
-		// text-align: center;
-		padding: 0 30px;
-		text-indent: 25px;
 		color: $text-second;
+		margin-bottom: 20px;
 		& > * {
-			&:not(:last-child) {padding-bottom: 10px;}
+			&:not(:last-child) {padding-bottom: 20px;}
 		}
 	}
 }

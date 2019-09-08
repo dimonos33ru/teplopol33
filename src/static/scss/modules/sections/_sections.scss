@@ -1,6 +1,9 @@
-section[class^="section"]:nth-child(odd) {
+.section--bg {
 	background-color: $bg-color-1;
 }
+// section[class^="section"]:nth-child(odd) {
+// 	background-color: $bg-color-1;
+// }
 
 .section {
 	padding: 80px 0 90px;
@@ -14,11 +17,12 @@ section[class^="section"]:nth-child(odd) {
 		z-index: 99;
 	}
 	&__description {
-		padding-bottom: 20px;
-		max-width: 70%;
+		padding-bottom: 30px;
+		max-width: 65%;
 		margin: 0 auto;
+		font-size: 14px;
 		text-align: center;
-		font-weight: 300;
+		// font-weight: 300;
 	}
 }
 
@@ -35,4 +39,5 @@ section[class^="section"]:nth-child(odd) {
 @import "s-projects";
 @import "s-calculate";
 @import "s-about";
+@import "s-questions";
 @import "s-contacts";

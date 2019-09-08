@@ -1,9 +1,24 @@
-.phone {
+.link {
 	white-space: nowrap;
 	color: $accent2;
 	border-bottom: 1px solid $accent2;
+	&:hover {
+		color: darken($accent2, 10);
+		border-bottom: 1px solid darken($accent2, 10);
+	}
 }
-.link {
-	color: $accent2;
-	border-bottom: 1px solid $accent2;
+
+.line {
+	width: 100%;
+	height: 10px;
+	background-color: $bg-color-1;
+}
+
+.hr-line {
+	width: 100px;
+	margin: 0 auto;
+	margin-top: -20px;
+	margin-bottom: 30px;
+	border-top: 1px solid #C7C7C7;
+	border-bottom: 1px solid #fff;
 }

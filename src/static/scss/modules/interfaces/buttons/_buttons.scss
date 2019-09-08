@@ -9,10 +9,9 @@
 	text-align: center;
 	
 	color: $white;
-	text-shadow:0px 1px 0px #810e05;
-	background-color:#f24537;
 	border:1px solid #d02718;
 	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	text-shadow:0px 1px 0px #810e05;
 	background: linear-gradient(to bottom, lighten($accent, 12) 1%, $accent 100%);
 	&:hover {
 		color: $white;
@@ -23,10 +22,20 @@
 		// position: relative;
 		// top: 1px;
 	}
-
-	&-o {
-		background-color: #fff;
-		color: $accent;
-		border: $accent 2px solid;
+	&--white {
+		font-family: $default-font;
+		color: #1c546c;
+		text-transform: uppercase;
+		border: none;
+		background-color: $white;
+		background: linear-gradient(to bottom, #ffffff 25%,#dadada 100%);
+		box-shadow:inset 0px 1px 0px 0px $white;
+		box-shadow: 0 3px 0 0 rgba(0, 0, 0, .3), 0 4px 10px 0 rgba(0, 0, 0, .2);
+		text-shadow:0px 1px 0px #e7e7e7;
+		&:hover {
+			color: $accent;
+			background: linear-gradient(to bottom, #ffffff 25%,#dadada 100%);
+			transition: all 0.2s ease-out;
+		}
 	}
 }

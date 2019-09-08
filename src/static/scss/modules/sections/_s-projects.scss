@@ -18,6 +18,10 @@
 		}
 	}
 	&__description {
+		// color: $accent2;
+		color: darken($accent2, 12);
+		font-family: $second-font;
+		font-weight: 500;
 		font-size: 24px;
 		text-align: center;
 	}

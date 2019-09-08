@@ -3,6 +3,8 @@
 @include font-face("opensans", "../fonts/OpenSansSemiBold/OpenSansSemiBold", 600);
 @include font-face("opensans", "../fonts/OpenSansBold/OpenSansBold", bold);
 @include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Light", 300);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-LightItalic", 300, italic);
 @include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Regular", normal);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Italic", normal, italic);
 @include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Medium", 500);
 @include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Bold", bold);

@@ -1,0 +1,33 @@
+.s-questions {
+	position: relative;
+	background: url(../img/content/bg-quest_1.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(#000000, 0.75);
+	}
+}
+.questions {
+	position: relative;
+	text-align: center;
+	z-index: 99;
+	&__text {
+		margin-bottom: 30px;
+		font-family: $second-font;
+		font-size: 28px;
+		color: $white;
+		font-weight: 500;
+	}
+	&__link {
+		white-space: nowrap;
+		color: $accent2;
+		&:hover {
+			color: darken($accent2, 10);
+		}
+	}
+}

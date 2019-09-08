@@ -27,7 +27,6 @@ $(document).ready(() => {
 	/* Setting FancyBox */
 	$('[data-fancybox]').fancybox({
 		toolbar: false,
-		smallBtn: true,
 	});
 
 	// Плавная прокрутка
