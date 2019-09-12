@@ -1,0 +1,78 @@
+/* Style for content-area */
+.content-area {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+article.page {
+	padding: 20px 0;
+	background-color: #FFF;
+}
+
+body.page {
+	background-color: #F1F5F6;
+}
+
+.entry-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(20);
+}
+.entry-icon {
+	@include size(60px);
+	margin-right: rem(30);
+}
+.entry-title {
+	font-family: $second-font;
+	font-weight: 500;
+	font-size: rem(36);
+}
+.entry-content {
+	font-size: rem(20);
+	& h2, h3, h4, h5 {
+		font-family: $second-font;
+		font-weight: 500;
+	}
+	& p, ul, ol {
+		font-size: rem(14);
+		margin-bottom: rem(16);
+	}
+	& ul {
+		padding:rem(10) rem(30);
+		& > * {
+			&:not(:last-child) {margin-bottom: rem(10);}
+		}
+	}
+	& li {
+		position: relative;
+		padding-left: rem(25);
+		&::before {
+			position: absolute;
+			content: '\f058';
+			left: 0;
+			top: -2px;
+			color: $accent2;
+			font-family:"Font Awesome 5 Free";
+			font-size: rem(18);
+			font-weight: normal;
+		}
+	}
+	& blockquote {
+		position: relative;
+		margin: rem(30) 0;
+		margin-left: rem(25);
+		padding:rem(10) rem(30);
+		color: $text-second;
+		font-size: rem(16);
+		font-style: italic;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 3px;
+			height: 100%;
+			background-color: $accent2;
+		}
+	}
+}

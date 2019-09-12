@@ -1,0 +1,12 @@
+extends template/page
+
+block variables
+	- var title = 'Страница услуг'
+	- var pageClass = 'service-page'
+
+block content
+	include ./pages/service/service-content
+
+block script
+	script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
+	script(src="js/bundle.js")

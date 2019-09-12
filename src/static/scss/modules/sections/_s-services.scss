@@ -2,7 +2,7 @@
 	&__card {
 		border-radius: 5px;
 		overflow: hidden;
-		text-align: center;
+		// text-align: center;
 		&:hover img {
 			filter: opacity(75%);
 			transition: all 0.5s;
@@ -19,12 +19,13 @@
 	&__bottom {
 		position: relative;
 		margin-top: 20px;
+		padding: 0 10px;
 	}
 	&__title {
 		display: inline-block;
 		padding: 10px 0;
 		margin: 0;
-		color: darken($accent2, 12);
+		// color: darken($accent2, 12);
 		font-family: $second-font;
 		text-transform: uppercase;
 		font-size: 16px;

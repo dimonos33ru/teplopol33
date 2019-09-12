@@ -1,28 +1,40 @@
 // import $ from "jquery";
 
 $(document).ready(() => {
-	/* Init OwlCarousel */
-	$('#slider-main').owlCarousel({
-		items: 1,
-		autoplay: true,
-		autoplayTimeout: 8000,
-		nav: true,
-		dots: false,
-		loop: true,
-		mouseDrag: false,
-		smartSpeed: 1000,
-		animateOut: 'fadeOut',
+	// Функция проверяет, есть ли элемент на странице
+	function isInPage(node) {
+		return (node === document.body) ? false : document.body.contains(node);
+	}
 
-		navText: ['<i class="fas fa-chevron-circle-left"></i>', '<i class="fas fa-chevron-circle-right"></i>'],
-		navContainerClass: 'slider-main__nav',
-		navClass: ['slider-main__arrow-left', 'slider-main__arrow-right'],
-	});
+	/* Проверяем есть элементы карусели на странице, если есть запускаем */
+	(function isInPageOwnCarousel() {
+		const main = document.getElementById('slider-main');
+		const projects = document.getElementById('slider-projects');
+		if (isInPage(main) && isInPage(projects)) {
+			/* Инициализация OwlCarousel */
+			$('#slider-main').owlCarousel({
+				items: 1,
+				autoplay: true,
+				autoplayTimeout: 8000,
+				nav: true,
+				dots: false,
+				loop: true,
+				mouseDrag: false,
+				smartSpeed: 1000,
+				animateOut: 'fadeOut',
 
-	/* Setting OwlCarousel */
-	$('#slider-projects').owlCarousel({
-		items: 1,
-		autoplay: false,
-	});
+				navText: ['<i class="fas fa-chevron-circle-left"></i>', '<i class="fas fa-chevron-circle-right"></i>'],
+				navContainerClass: 'slider-main__nav',
+				navClass: ['slider-main__arrow-left', 'slider-main__arrow-right'],
+			});
+
+			/* Настройки OwlCarousel */
+			$('#slider-projects').owlCarousel({
+				items: 1,
+				autoplay: false,
+			});
+		}
+	}());
 
 	/* Setting FancyBox */
 	$('[data-fancybox]').fancybox({
@@ -41,7 +53,7 @@ $(document).ready(() => {
 	let yaMapsShow = false;
 	const divYaMaps = document.getElementById('YaMaps');
 
-	if (isInPage(divYaMaps)) {		
+	if (isInPage(divYaMaps)) {
 		$('a[href="#contacts"]').click(() => {
 			if (!yaMapsShow) {
 				showYaMaps();
@@ -59,10 +71,6 @@ $(document).ready(() => {
 		});
 	}
 
-	// Функция проверяет, есть ли элемент на странице
-	function isInPage(node) {
-		return (node === document.body) ? false : document.body.contains(node);
-	}
 	// Создает элемент с Яндекс картой
 	function showYaMaps() {
 		const script = document.createElement('script');

@@ -1,0 +1,66 @@
+.faq {
+	margin: 20px 0;
+	&__title {
+		padding: 15px 0;
+		font-size: 22px;
+		font-family: $second-font;
+		font-weight: 500;
+	}
+}
+
+.accordion {
+	&__tab input, 
+	/* &__tab-content */ {
+		display: none; 
+	}
+	&__tab {
+		border: 1px solid #e9eaec;
+		border-radius: 3px;
+		background-image: linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+		margin-bottom: 5px;
+	}
+	&__tab-title {
+		position: relative;
+		font-size: 14px;
+		padding: 10px 45px 10px 10px;
+		display: block;
+		color: $accent2;
+		// font-weight: bold;
+		cursor: pointer;
+		&::after {
+			content: '+';
+			position: absolute;
+			padding: 20px;
+			color: $text;
+			// float: right;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+		}
+	}
+	&__tab-content {
+		background-color: #fff;
+		font-size: 14px;
+		// color: $text-second;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.5s ease-out;
+		& p {
+			padding: 10px 20px;
+		}
+	}
+}
+
+.accordion__tab :checked + .accordion__tab-title {
+	text-decoration: underline;
+	border-radius: 3px 3px 0 0;
+}
+.accordion__tab :checked + .accordion__tab-title::after {
+	content: '−';
+}
+.accordion__tab :checked ~ .accordion__tab-content {
+	// display: block;
+	max-height: 10rem;
+	overflow: hidden;
+	transition: max-height 0.5s ease-in;
+}

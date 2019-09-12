@@ -11,11 +11,11 @@ html(lang="ru-RU")
 	body(class=pageClass)
 		.wrapper
 			include ../modules/header/header
-			main.content
-				block content
+			#primary.content-area
+				main#main.site-main
+					block content
 			include ../modules/footer/footer
 			include ../modules/forms/hidden
 
 		script(src="https://code.jquery.com/jquery-3.4.1.min.js")
-		
 		block script
