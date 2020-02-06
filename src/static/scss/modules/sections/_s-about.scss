@@ -4,11 +4,11 @@
 		z-index: 10;
 	}
 	&__inner {
-		padding: 30px;
+		padding: 50px;
 		position: absolute;
 		top: 50%;
-		left: 40%;
-		width: 75%;
+		left: 35%;
+		width: 80%;
 		transform: translateY(-50%);
 		background-color: $white;
 		box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.15);

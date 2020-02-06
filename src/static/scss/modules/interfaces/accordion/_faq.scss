@@ -9,8 +9,7 @@
 }
 
 .accordion {
-	&__tab input, 
-	/* &__tab-content */ {
+	&__tab input {
 		display: none; 
 	}
 	&__tab {
