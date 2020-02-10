@@ -9,30 +9,37 @@ section.section.s-calculate#calculate
 					.calculate__btn.btn.btn--white Узнать подробнее
 			.col-md-6
 				form.calculate__form
-					.calculate__input-wrap.form__input-wrap
+					.form__input-wrap.calculate__input-wrap
 						label
-							span Площадь помещения
-							input(type="number" name="room_area" placeholder="Введите число" required).calculate__input.form__input
-					.calculate__input-wrap.form__input-wrap
+							span Площадь помещения*
+							input(type="number" name="room_area" placeholder="Введите число, м2" required).form__input
+					.form__input-wrap.calculate__input-wrap
 						label
-							span Количество помещений
-							input(type="number" name="number_area" placeholder="Введите число" required).calculate__input.form__input
-					.calculate__input-wrap.form__input-wrap
+							span Введите ваше имя*
+							input(type="text" name="name" placeholder="Имя" required).form__input
+					.form__input-wrap.calculate__input-wrap
 						label
-							span Введите ваше имя
-							input(type="text" name="name" placeholder="Имя" required).calculate__input.form__input
-					.calculate__input-wrap.form__input-wrap
+							span Количество помещений*
+							input(type="number" name="number_area" placeholder="Введите число" required).form__input
+					.form__input-wrap.calculate__input-wrap
 						label
-							span Введите вашу фамилию
-							input(type="text" name="surname" placeholder="Фамилия" required).calculate__input.form__input
-					.calculate__input-wrap.form__input-wrap
+							span Введите ваш телефон*
+							input(type="tel" name="phone" placeholder="Телефон").form__input
+					.form__input-wrap.calculate__input-wrap
+						span Чертеж проекта
+						.hint
+							i.far.fa-question-circle.hint-triger
+							.hint-popup Прикрепите файл с чертежами, если они у вас есть. Если у вас не один файл, упакуйте их в архив и загрузите в форму.
+						input(type="file", name="plan")#customFileUpload.calculate__input-file
+						label(for="customFileUpload").form__input.calculate__label-file Выберите файл
+					.form__input-wrap.calculate__input-wrap
 						label
-							span Введите ваш телефон
-							input(type="tel" name="phone" placeholder="Телефон").calculate__input.form__input
-					.calculate__input-wrap.form__input-wrap
+							span Введите ваш email*
+							input(type="email" name="email" placeholder="Email").form__input
+					.form__input-wrap.calculate__details
 						label
-							span Введите ваш email
-							input(type="email" name="email" placeholder="Email").calculate__input.form__input
+							span Подробнее
+							textarea#moreDetails(name="details",  rows="3").form__input
 					.calculate__input-wrap
 						p * - поля обязательные для заполнения
-					button(type="submit").calculate__submit.btn Узнать цену пола
+					button(type="submit").calculate__input-wrap.btn Узнать цену пола
